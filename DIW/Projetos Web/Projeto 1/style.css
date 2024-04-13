@@ -1,0 +1,19 @@
+body {
+background-color: rgb(200, 161, 249);
+}
+
+h1 {
+    color: rgb(246, 44, 145);
+}
+
+thead {
+    color: rgb(238, 238, 3); background-color: rgb(40, 188, 224);
+}
+
+tbody {
+    color:crimson; background-color: ghostwhite;
+}
+
+#Introdução {
+    color: rgb(14, 4, 212);
+}

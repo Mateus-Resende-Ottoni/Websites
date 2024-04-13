@@ -1,0 +1,562 @@
+html {
+    background-color: rgb(255, 203, 250);
+}
+
+
+/* Universais grandes início */
+
+@media only screen and (min-width: 800px) {
+
+    .categorias {
+        color: rgb(27, 28, 122);
+        text-decoration: none;
+        background-color: lightsalmon;
+        border-radius: 15px;
+        padding: 4px;
+        font-size: 85%;
+    }
+
+    .categorias:hover {
+        color: lightsalmon;
+        background-color: rgb(27, 28, 122);
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 90%;
+        font-style: italic;
+    }
+
+}
+
+/* Universais grandes fim */
+
+
+/* Universais pequenos início */
+
+@media only screen and (max-width: 799px) {
+
+    .categorias {
+        color: rgb(187, 9, 178);
+        text-decoration: none;
+        background-color: rgb(237, 238, 218);
+        border-radius: 5px;
+        padding: 3px;
+        font-size: 55%;
+    }
+
+}
+
+
+/* Universais pequenos fim */
+
+/* Header grande início */
+
+@media only screen and (min-width: 800px) {
+
+    #menuToggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    label {
+        opacity: 0%;
+    }
+
+    .marca {
+        color: rgb(255, 0, 0);
+        margin-left: 1%;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .link_menu {
+        color: rgb(34, 0, 59);
+        list-style: none;
+        text-decoration: none;
+        padding: 10px;
+        margin: 1px;
+        border: 1px;
+        border-style: dashed;
+    }
+
+    .link_menu:hover {
+        text-decoration: none;
+        color: rgb(198, 0, 0);
+        background-color: rgb(0, 0, 0);
+    }
+
+}
+
+/* Header grande fim */
+
+/* Header pequeno início */
+
+@media only screen and (max-width: 799px) {
+
+
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: darkorchid;
+    }
+
+    .menu_icon i {
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+        margin-left: 33vw;
+        padding-bottom: 2px;
+    }
+
+    .marca h1 {
+        color: aqua;
+        text-align: center;
+        padding-left: 7%;
+
+    }
+
+    header nav {
+        display: absolute;
+        width: 100%;
+    }
+
+    .menu {
+        list-style: none;
+        width: 100%;
+    }
+
+
+    #menuToggle:checked~nav ul li {
+        display: none;
+        background-color: aqua;
+    }
+
+    .menu li {
+        height: 0%;
+        transition: height 0.25s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .link_menu {
+        color: rgb(236, 229, 255);
+        list-style: none;
+        text-decoration: dotted;
+        text-decoration-color: rgb(226, 193, 3);
+        text-decoration-line: underline;
+        text-decoration-thickness: 20%;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    #menuToggle:checked~label i:nth-child(2) {
+        display: none;
+    }
+
+    #menuToggle:checked~label i:first-child {
+        display: block;
+    }
+
+    #menuToggle:not(checked)~label i:nth-child(2) {
+        display: block;
+    }
+
+    #menuToggle:not(checked)~label i:first-child {
+        display: none;
+    }
+
+
+
+}
+
+/* Header pequeno fim */
+
+/* Main grande início*/
+
+@media only screen and (min-width: 800px) {
+
+    main {
+        float: left;
+        width: 70%;
+        background-color: rgb(195, 98, 151);
+    }
+
+    .caixa_do_post {
+        display: inline-block;
+        width: 100%;
+        border: 4px;
+        border-color: rgb(125, 27, 119);
+        border-style: dotted;
+    }
+
+    .thumbnail {
+        width: 25%;
+        float: left;
+        margin: 10px;
+        border-radius: 22px;
+    }
+
+    .post {
+        width: 70%;
+        float: right;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
+    .caixa_do_post .titulo {
+        margin-top: 5px;
+        font-style: oblique;
+        font-weight: bolder;
+    }
+
+    .data {
+        display: inline;
+        margin-right: 2%;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .autor {
+        display: inline;
+        margin-right: 3%;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .texto {
+        margin-top: 10px;
+        right: 20px;
+        font-size: 110%;
+    }
+
+
+
+
+    .caixa_sobre_nos {
+        background: linear-gradient(orange, rgb(255, 77, 77), lightsalmon, rgb(255, 255, 119), white);
+        margin-bottom: 7px;
+    }
+
+    .foto {
+        max-height: 350px;
+        padding: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5%;
+    }
+
+    .pessoa {
+        text-align: center;
+        margin-top: 10px;
+        border: 5px;
+        border-style: double;
+        border-color: blueviolet;
+        background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(128, 0, 128, 0.5));
+        background-blend-mode: lighten;
+    }
+
+    .informacoes {
+        display: inline-block;
+        line-height: 45px;
+    }
+
+    .perguntas {
+        display: inline-block;
+        font-size: 45%;
+    }
+
+    .dados {
+        display: inline-block;
+        list-style: none;
+        font-size: 100%;
+    }
+
+
+
+
+    .caixa_de_contato {
+        border-top: 9px;
+        border-bottom: 9px;
+        border-left: 18px;
+        border-right: 14px;
+        border-style: ridge;
+        border-color: aquamarine;
+        background: linear-gradient(blueviolet, green, lightblue, blueviolet);
+        width: 100%;
+        display: inline-block;
+    }
+
+    .caixa_de_contato .marca {
+        display: inline-block;
+        max-width: 30%;
+        max-height: 30%;
+        margin: 10px;
+    }
+
+    .info_contato {
+        display: inline-block;
+        max-width: 60%;
+    }
+
+    .caixa_de_contato .titulo {
+        color: antiquewhite;
+        font-size: 50px;
+    }
+
+    .contato {
+        font-weight: 900;
+    }
+
+
+
+
+    .caixa_de_patrocinador {
+        display: inline-block;
+        width: 100%;
+        padding-top: 4px;
+        padding-bottom: 6px;
+        border-bottom: 10px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-style: double;
+    }
+
+    .caixa_de_patrocinador .marca {
+        display: inline-block;
+        width: 45%;
+        border-radius: 4px;
+    }
+
+    .patrocinio {
+        display: inline-block;
+        width: 50%;
+        margin-left: 1.5%;
+        border: 1px;
+        border-style: dashed;
+    }
+
+    .patrocinio .titulo {
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .info_patrocinio {
+        text-align: center;
+    }
+}
+
+/* Main grande fim */
+
+/* Main pequeno início*/
+
+@media only screen and (max-width: 799px) {
+
+    main {
+        margin-top: 109px;
+        background-color: rgb(195, 98, 151);
+    }
+
+    .caixa_do_post {
+        display: inline-block;
+        border: 1%;
+        border-color: rgb(125, 27, 119);
+        border-style: dotted;
+    }
+
+    .thumbnail {
+        width: 25%;
+        float: left;
+        margin: 1.5%;
+        border-radius: 35px;
+    }
+
+    .post {
+        width: 70%;
+        float: right;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
+    .titulo {
+        margin-top: 5px;
+        font-style: oblique;
+        font-weight: bolder;
+    }
+
+    .data {
+        display: inline;
+        margin-right: 1%;
+        font-weight: 400;
+        font-size: 25%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+    }
+
+    .autor {
+        display: inline;
+        margin-right: 1%;
+        font-size: 15%;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .texto {
+        margin-top: 10px;
+        right: 20px;
+        font-size: 85%;
+    }
+
+
+
+
+    .perguntas {
+        display: inline-block;
+    }
+
+    .dados {
+        display: inline-block;
+        list-style: none;
+    }
+
+
+}
+
+/* Main pequeno fim */
+
+/* Barra de pesquisa grande início */
+
+@media only screen and (min-width: 800px) {
+
+    aside {
+        float: right;
+        width: 30%;
+        background-color: rgb(231, 231, 114);
+    }
+
+    .caixa_de_pesquisa {
+        margin-top: 10px;
+    }
+
+    .caixa_de_categorias {
+        margin-top: 10px;
+    }
+
+    .caixa_de_categorias li {
+        margin-bottom: 6px;
+    }
+
+    #searchToggle {
+        display: none;
+    }
+
+    .search_icon {
+        display: none;
+    }
+
+}
+
+/* Barra de pesquisa grande fim */
+
+/* Barra de pesquisa pequena início */
+
+@media only screen and (max-width: 799px) {
+
+    aside {
+        top: 16%;
+        right: 5px;
+        position: fixed;
+        width: 40%;
+        display: grid;
+    }
+
+    #searchToggle:checked~.menu_pesquisa search {
+        display: none;
+    }
+
+    #searchToggle:checked~.menu_pesquisa nav {
+        display: none;
+    }
+
+    .search_icon i {
+        margin-left: auto;
+        float: right;
+        font-size: 1.55em;
+    }
+
+    .caixa_de_pesquisa {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(231, 231, 114, 0.882);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .caixa_de_categorias {
+        margin-top: 10px;
+        padding: 10px;
+        display: inline-block;
+        width: 100%;
+        background-color: rgba(231, 231, 114, 0.882);
+        border-bottom-left-radius: 85px;
+        border-bottom-right-radius: 85px;
+    }
+
+    .caixa_de_categorias li {
+        margin-bottom: 6px;
+    }
+
+    #searchToggle {
+        display: none;
+    }
+
+    #searchToggle:checked~label i:nth-child(2) {
+        display: none;
+    }
+
+    #searchToggle:checked~label i:first-child {
+        display: block;
+        background-color: rgba(231, 231, 114, 0.685);
+        border-radius: 6px;
+        padding: 1.5%;
+    }
+
+    #searchToggle:not(checked)~label i:nth-child(2) {
+        display: block;
+        background-color: rgba(255, 0, 0, 0.507);
+        border-radius: 50px;
+        padding: 2%;
+    }
+
+    #searchToggle:not(checked)~label i:first-child {
+        display: none;
+    }
+
+}
+
+/* Barra de pesquisa pequena fim */

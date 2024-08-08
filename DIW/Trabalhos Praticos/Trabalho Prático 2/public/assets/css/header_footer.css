@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+
+
+body {
+    min-height: 100vh;
+}
+
+
+/*  Header início */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: rgb(235, 20, 95);
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        height: 17vh;
+    }
+
+    @media only screen and (min-height: 1000px) {
+
+        header {
+            height: 10vh;
+        }
+    }
+
+    .logomarca {
+        width: 25%;
+
+        padding: 1.5% 0;
+
+        border-radius: 25%;
+
+        margin-left: 2%;
+
+        background-color: rgb(255, 255, 255);
+
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+
+        font-size: 1.85vw;
+        font-family: "Playwrite US Modern", cursive;
+    }
+
+    .logomarca:hover {
+        color: white;
+
+        background-color: rgb(0, 0, 0);
+    }
+
+    header input,
+    header label {
+        display: none;
+    }
+
+    .menu_seções {
+        display: flex;
+        float: right;
+        align-items: center;
+
+        list-style: none;
+
+        margin-right: 2.5%;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+    .menu_seções li {
+        display: inline-block;
+
+        padding: 12px;
+
+        border-radius: 5px;
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 9px;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: aliceblue;
+
+        background-color: rgb(35, 2, 15);
+
+        
+        border: 5px groove rgb(170, 18, 122);
+    }
+
+    .menu_seções li:hover {
+        color: rgb(181, 0, 88);
+
+        background-color: aliceblue;
+    }
+
+    .menu_seções li button, .menu_seções li button a, .menu_seções li a {
+        text-decoration: none;
+
+        color: inherit;
+
+        font-size: 1.5vw;
+    }
+
+    .menu_seções li button {
+        border: none;
+
+        background: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        position: fixed;
+
+        top: 0;
+
+        z-index: 100;
+    }
+
+    .menu_seções {
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    label i {
+
+        margin-right: 3vw;
+
+        font-size: 300%;
+
+    }
+
+    #menuToggle:checked~label i:first-of-type {
+        display: none;
+    }
+
+    #menuToggle:not(checked)~label i:first-of-type {
+        display: block;
+    }
+
+    #menuToggle:checked~label i:nth-of-type(2) {
+        display: block;
+    }
+
+    #menuToggle:not(checked)~label i:nth-of-type(2) {
+        display: none;
+    }
+
+    #menuToggle:checked~.menu_seções {
+        display: block;
+        width: 55%;
+
+        position: fixed;
+
+        top: 16vh;
+        right: 0vw;
+
+        border-bottom-left-radius: 40px;
+
+        list-style: none;
+
+        background-color: rgb(235, 20, 95);
+
+        z-index: 150;
+    }
+
+    #menuToggle:checked~.menu_seções li {
+        width: 100%;
+
+        text-decoration: none;
+
+        color: rgb(0, 0, 0);
+
+        line-height: 8.5vh;
+
+        margin-bottom: 1vh;
+    }
+
+    #menuToggle:checked~.menu_seções li button {
+        width: 100%;
+
+        border: none;
+        background: none;
+    }
+
+    #menuToggle:checked~.menu_seções li button a {
+        text-decoration: none;
+        font-size: 3.5vw;
+        font-weight: 600;
+
+        color: inherit;
+
+        padding: 5%;
+
+        border-radius: 5px;
+        border: black solid 5px;
+
+        background-color: aliceblue;
+
+    }
+
+}
+
+@media only screen and (min-width: 431px) and (max-width: 767px) {
+
+    header {
+        height: 16vh;
+    }
+
+    @media only screen and (min-height: 1000px) {
+
+        header {
+            height: 10vh;
+        }
+    }
+
+    .logomarca {
+
+        padding: 2.5% 10%;
+
+        border-radius: 55%;
+
+        margin: 0 auto;
+
+        background-color: rgb(255, 255, 255);
+
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+
+        font-size: 175%;
+        font-weight: 800;
+        font-family: "Playwrite US Modern", cursive;
+    }
+
+}
+
+@media only screen and (max-width: 431px) {
+
+    header {
+
+        height: 10vh;
+
+    }
+
+    @media only screen and (min-height: 1000px) {
+
+        header {
+
+            height: 6vh;
+
+        }
+
+    }
+
+    .logomarca {
+
+        padding: 1.25% 5%;
+
+        border-radius: 35%;
+
+        margin: 0 auto;
+
+        background-color: rgb(255, 255, 255);
+
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+
+        font-size: 125%;
+        font-weight: 600;
+        font-family: "Playwrite US Modern", cursive;
+    }
+
+    #menuToggle:checked~.menu_seções {
+
+        top: 10vh
+    }
+
+}
+
+/* Header fim */
+
+
+
+/* Footer início */
+
+footer {
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+
+    background-color: black;
+
+    color: aliceblue;
+}
+
+footer i {
+    margin-right: 3px;
+}
+
+footer h5 {
+    margin-top: 2px;
+    margin-left: 2%;
+
+    font-size: 50%;
+    font-weight: 200;
+}
+
+/* Footer fim */

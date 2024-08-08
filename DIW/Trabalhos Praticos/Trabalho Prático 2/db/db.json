@@ -1,0 +1,113 @@
+{
+  "autor": {
+    "nome": "",
+    "bio": "",
+    "seguidores": "",
+    "localizacao": "",
+    "site": "",
+    "email": "mateus.ottoni@sga.pucminas.br",
+    "redes_sociais": {
+      "discord": {
+        "icone": "discord",
+        "link": "https://discord.com/users/3410787257969278977"
+      },
+      "github": {
+        "icone": "github",
+        "link": "https://github.com/Mateus-Resende-Ottoni"
+      },
+      "steam": {
+        "icone": "steam",
+        "link": "https://steamcommunity.com/profiles/76561198306935756/"
+      },
+      "pinterest": {
+        "icone": "pinterest",
+        "link": "https://br.pinterest.com/matyas_9999/"
+      },
+      "kaggle": {
+        "icone": "kaggle",
+        "link": "https://www.kaggle.com/mateusottoni"
+      }
+    }
+  },
+  "recomendacoes": [
+    {
+      "titulo": "C Programming Full Course for free 🕹️",
+      "link": "https://www.youtube.com/watch?v=87SH2Cn0s9A",
+      "imagem": "reco_01.jpg"
+    },
+    {
+      "titulo": "How to Catch a Cheater With Math",
+      "link": "https://www.youtube.com/watch?v=XTcP4oo4JI4",
+      "imagem": "reco_02.jpg"
+    },
+    {
+      "titulo": "A.I. Learns to play Flappy Bird",
+      "link": "https://www.youtube.com/watch?v=WSW-5m8lRMs",
+      "imagem": "reco_03.jpg"
+    },
+    {
+      "titulo": "AULA 20 de 42 - TRÊS TIPOS LÓGICOS DE PESQUISA",
+      "link": "https://www.youtube.com/watch?v=XoTQo7fUf0s",
+      "imagem": "reco_04.jpg"
+    },
+    {
+      "titulo": "Intro to Programming - Kaggle Course",
+      "link": "https://www.kaggle.com/learn/intro-to-programming/course",
+      "imagem": "reco_05.jpg"
+    },
+    {
+      "titulo": "AI Learns To Swing Like Spiderman",
+      "link": "https://www.youtube.com/watch?v=Y48Vk77MoYg",
+      "imagem": "reco_06.jpg"
+    },
+    {
+      "titulo": "Remaking BEAN COUNTERS from Club Penguin in Unity!",
+      "link": "https://www.youtube.com/watch?v=ik7hCaBzK8A",
+      "imagem": "reco_07.jpg"
+    }
+  ],
+  "colegas": [
+    {
+      "nome": "Antônio Drummond",
+      "foto": "https://avatars.githubusercontent.com/u/110631812?v=4",
+      "link_Git": "https://github.com/AntonioDrumond"
+    },
+    {
+      "nome": "Bernardo Souza Polakiewicz",
+      "foto": "foto_B1.jpeg",
+      "link_Git": ""
+    },
+    {
+      "nome": "Gabriel Penido",
+      "foto": "https://avatars.githubusercontent.com/u/161370792?v=4",
+      "link_Git": "https://github.com/gabrielpenido0412"
+    },
+    {
+      "nome": "Matheus Arantes Coimbra",
+      "foto": "foto_M2.png",
+      "link_Git": "https://github.com/MatheusA-Coimbra"
+    },
+    {
+      "nome": "Theo Diniz Viana",
+      "foto": "https://avatars.githubusercontent.com/u/65356457?v=4",
+      "link_Git": "https://github.com/theokiwi"
+    }
+  ],
+  "repositorios": [
+    {
+      "nome": "",
+      "descricao": "",
+      "estrelas": 0,
+      "contribuidores": 0,
+      "forks": 0,
+      "data_criacao": 0,
+      "licenca": "",
+      "linguagens": [],
+      "topicos": [],
+      "link": "",
+      "proprietario": "",
+      "foto_proprietario": "",
+      "link_proprietario": ""
+    }
+  ]
+}

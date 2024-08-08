@@ -1,0 +1,655 @@
+
+/* Main início */
+
+.seção {
+    width: 100%;
+
+    padding-bottom: 120px;
+
+    margin-top: 2%;
+
+    background: linear-gradient(rgb(239, 118, 128), rgb(255, 175, 207), rgb(255, 175, 207), rgb(255, 175, 207), rgb(255, 192, 217), rgb(255, 198, 221), white);
+}
+
+.título {
+    padding-left: 1.5%;
+    padding-bottom: 0.5%;
+
+    border-color: black;
+    border-style: dashed;
+    border-bottom: 2%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+@media only screen and (min-width: 431px) and (max-width: 767px) {
+
+    .seção:first-of-type {
+        margin-top: 10%;
+    }
+
+
+    .seção {
+        padding-top: 20%;
+
+        background: linear-gradient(white, rgb(239, 118, 128), rgb(255, 111, 138), rgb(255, 134, 164), rgb(250, 129, 177), rgb(255, 192, 217), rgb(255, 198, 221), white);
+    }
+
+}
+
+@media only screen and (max-width: 431px) {
+
+    .seção:first-of-type {
+        margin-top: 11.5%;
+    }
+
+    .seção {
+        padding-top: 25%;
+
+        background: linear-gradient(white, rgb(239, 118, 128), rgb(255, 111, 138), rgb(255, 134, 164), rgb(250, 129, 177), rgb(255, 192, 217), rgb(255, 198, 221), white);
+    }
+
+}
+
+
+/* Perfil início */
+
+.dados a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .perfil {
+        display: inline-block;
+    }
+
+    #autor {
+        float: left;
+
+        max-width: 20vw;
+
+        margin-left: 2%;
+        margin-top: 3px;
+
+        border: 5px;
+        border-radius: 4px;
+        border-color: aliceblue;
+        border-style: solid;
+    }
+
+    .dados {
+        float: right;
+
+        width: 72.5%;
+
+        margin-right: 3%;
+    }
+
+    .dados h3 {
+        color: rgb(255, 66, 69);
+
+        font-weight: 850;
+
+        display: inline-block;
+    }
+
+    .dados h3:hover {
+        background: linear-gradient(to left, rgb(43, 23, 153),rgb(128, 0, 219),rgb(43, 23, 153));
+        background-clip: text;
+        color: transparent;
+    }
+
+    .seguidores{
+        float: right;
+
+        position: relative;
+
+        padding-top: 0.45vh;
+        padding-left: 0.6vw;
+        padding-right: 0.3vw;
+
+        margin-top: 0.15vh;
+
+        border-radius: 10px;
+
+        text-align: center;
+
+        background-color: white;
+    }
+
+    .seguidores i {
+        font-size: 150%;
+    }
+
+    .seguidores:hover {
+        color: blue;
+    }
+
+    .seguidores h6 {
+        display: inline-block;
+
+        font-weight: 700;
+    }
+
+
+    .localização h4,
+    .site h4, .email h4 {
+        display: inline-block;
+
+        color: rgb(255, 66, 95);
+
+        font-weight: 650;
+    }
+
+    .localização p,
+    .site p, .email p {
+        display: inline-block;
+    }
+
+    .site p {
+        color: rgb(3, 25, 153);
+    }
+
+    .site a p:hover {
+        color: rgb(0, 106, 172);
+
+        text-decoration: underline;
+        text-decoration-color: rgb(43, 55, 226);
+        text-decoration-thickness: 2px;
+    }
+
+    .redes_sociais {
+        text-align: center;
+    }
+
+    .redes_sociais i {
+        margin-right: 2.75%;
+        margin-left: 2.75%;
+
+        color: black;
+    }
+
+    .redes_sociais a i.fa-discord:hover {
+        background: linear-gradient(to left, rgb(117, 84, 235),rgb(72, 0, 124));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a i.fa-github:hover {
+        background: linear-gradient(to bottom, rgb(98, 85, 145),rgb(10, 42, 70));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a i.fa-steam:hover {
+        background: linear-gradient(to top, rgb(35, 77, 193),rgb(20, 10, 50));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a i.fa-pinterest:hover {
+        background: linear-gradient(to right, rgb(224, 13, 13),rgb(81, 6, 57));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a i.fa-kaggle:hover {
+        background: linear-gradient(to left, rgb(6, 197, 181),rgb(15, 61, 135));
+        background-clip: text;
+        color: transparent;
+     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .dados {
+        font-size: 100%;
+    }
+
+    .redes_sociais i {
+        font-size: 250%;
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .dados {
+        font-size: 115%;
+    }
+
+    .redes_sociais i {
+        font-size: 310%;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) {
+
+    .dados {
+        font-size: 130%;
+    }
+
+    .redes_sociais i {
+        font-size: 380%;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+    .perfil .pessoa {
+        display: block;
+
+        max-width: 40%;
+
+        margin: 3px auto 0;
+
+        border: 6px;
+        border-color: aliceblue;
+        border-style: solid;
+        border-radius: 2%;
+    }
+
+    .dados {
+        padding: 3px;
+
+        border: 5px;
+        border-style: groove;
+        border-color: aliceblue;
+
+        margin: 4px;
+    }
+
+    .perfil .dados h3 {
+        display: block;
+
+        text-align: center;
+
+        background: linear-gradient(to left, rgb(212, 11, 18),rgb(193, 0, 219),rgb(214, 14, 61));
+        background-clip: text;
+        color: transparent;
+
+        font-weight: 850;
+
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: rgb(176, 2, 133);
+    }
+    
+    .seguidores {
+        display: block;
+
+        text-align: center;
+    }
+
+    .seguidores i {
+        font-size: 175%;
+
+        color: blue;
+    }
+
+    .seguidores h6 {
+        font-weight: 650;
+    }
+
+    .site p{
+        color: rgb(210, 0, 247);
+
+        text-decoration: underline;
+        text-decoration-color: rgb(230, 0, 255);
+    }
+
+    .descrição,
+    .localização,
+    .site, .email {
+        text-align: center;
+    }
+
+    .localização p,
+    .site p, .email p{
+        display: inline-block;
+    }
+
+    .localização h4,
+    .site h4, .email h4 {
+        display: inline-block;
+
+        color: rgb(255, 66, 95);
+
+        font-weight: 650;
+    }
+
+    .redes_sociais {
+        text-align: center;
+
+        font-size: 350%;
+    }
+
+    .redes_sociais i {
+        margin-right: 15px;
+        margin-left: 15px;
+
+        color: black;
+    }
+
+    .redes_sociais a:first-of-type i {
+        background: linear-gradient(to left, rgb(117, 84, 235),rgb(72, 0, 124));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a:nth-of-type(2) i {
+        background: linear-gradient(to bottom, rgb(98, 85, 145),rgb(10, 42, 70));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a:nth-of-type(3) i {
+        background: linear-gradient(to top, rgb(35, 77, 193),rgb(20, 10, 50));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a:nth-of-type(4) i {
+        background: linear-gradient(to right, rgb(224, 13, 13),rgb(81, 6, 57));
+        background-clip: text;
+        color: transparent;
+     }
+
+     .redes_sociais a:nth-of-type(5) i {
+        background: linear-gradient(to left, rgb(6, 197, 181),rgb(15, 61, 135));
+        background-clip: text;
+        color: transparent;
+     }
+}
+
+
+
+/* Perfil fim */
+
+
+/* Repositórios início */
+
+#repositórios {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+
+}
+
+.repositórios .card-body {
+    text-align: center;
+}
+
+.icones_repositorio {
+    display: inline-block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icones_repositorio h6 {
+    display: inline-block;
+
+    font-size: 125%;
+
+}
+
+.icones_repositorio i {
+    font-size: 150%;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .card-title a {
+        text-decoration: none;
+
+        color: red;
+    }
+
+    .card-title a:hover {
+        color: rgb(255, 41, 205);
+
+        text-decoration: underline;
+        text-decoration-color: rgb(189, 43, 226);
+        text-decoration-style: solid;
+        text-decoration-thickness: 2px;
+    }
+
+    .icones_repositorio i:nth-child(3) {
+        margin-left: 25px;
+    }
+
+    .icones_repositorio i:first-of-type:hover {
+        color: gold;
+    }
+
+    .icones_repositorio i:nth-of-type(2):hover {
+        color: blue;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .card {
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+
+    .card-title a {
+        color: rgb(255, 41, 205);
+
+        text-decoration: underline;
+        text-decoration-color: rgb(189, 43, 226);
+    }
+
+    .icones_repositorio i:first-of-type {
+        color: gold;
+    }
+
+    .icones_repositorio i:nth-of-type(2) {
+        margin-left: 95px;
+
+        color: blue;
+    }
+}
+
+/* Repositórios fim */
+
+/* Conteúdo recomendado (Carousel) início */
+
+.slides {
+    padding: 2.5% 3.25% 3.75%;
+
+    margin: 0 7.5%;
+
+    border-radius: 15px;
+
+    background: radial-gradient(rgb(255, 178, 213), rgb(241, 35, 93), rgb(96, 0, 128));
+}
+
+#slides {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    border-radius: 15px;
+
+    align-content: center;
+
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.carousel-control-prev span i,
+.carousel-control-next span i {
+
+    padding: 5%;
+
+    border-radius: 25%;
+
+    color: rgb(255, 0, 149);
+
+    font-size: 250%;
+
+    background-color: rgba(128, 0, 128, 0.525);
+}
+
+.carousel-indicators button {
+    position: relative;
+
+    border-radius: 50px;
+
+    height: 14px !important;
+    width: 14px !important;
+    margin: 0 15px !important;
+    border-radius: 100%;
+    background-color: #eee0f7 !important;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .carousel-caption:hover {
+        color: crimson;
+
+        background-color: rgba(2, 0, 3, 0.815);
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 880px) {
+
+    .carousel-indicators button {
+        top: 6.7vh;
+    }
+
+    @media only screen and (min-height: 768px) {
+
+        .carousel-indicators button {
+            top: 4.1vh;
+        }
+
+        @media only screen and (min-height: 1024px) {
+
+            .carousel-indicators button {
+                top: 4.7vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1145px) {
+
+    @media only screen and (min-height: 720px) {
+        .carousel-indicators button {
+            top: 7.4vh;
+        }
+
+        @media only screen and (min-height: 1124px) {
+            .carousel-indicators button {
+                top: 3.65vh;
+            }
+        }
+    }
+
+    @media only screen and (max-height: 719px) {
+        .carousel-indicators button {
+            top: 8.55vh;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1146px) {
+
+    .carousel-indicators button {
+        top: 7.7vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    .slides {
+        padding: 3.5% 4.25% 5.75%;
+
+        margin: 0 4.5%;
+    }
+
+    .carousel-indicators button {
+        top: 7.25vh;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    .slides {
+        padding: 3.5% 4.25% 5.75%;
+
+        margin: 0 4.5%;
+    }
+
+    .carousel-indicators button {
+        top: 6.85vh;
+    }
+
+    @media only screen and (min-height: 760px) {
+
+        .carousel-indicators button {
+            top: 5.3vh;
+        }
+
+        @media only screen and (min-height: 890px) {
+            .carousel-indicators button {
+                top: 4.95vh;
+            }
+        }
+    }
+
+}
+
+
+/* Conteúdo recomendado (Carousel) fim */
+
+/* Colegas de trabalho início */
+
+#colaboradores {
+    margin: 6px;
+}
+
+.colaborador .pessoa {
+    width: 100%;
+
+    padding: 2.25%;
+
+    background: linear-gradient(purple, cyan, white);
+
+    border-radius: 25px;
+}
+
+.colaborador h5 {
+    text-align: center;
+    font-style: italic;
+
+    background: linear-gradient(to right, rgb(255, 3, 3), rgb(38, 1, 90));
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* Colegas de trabalho fim */
+
+
+/* Main fim */
+
+
